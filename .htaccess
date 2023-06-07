@@ -1,0 +1,10 @@
+DirectoryIndex view/index.php
+RewriteEngine on
+
+RewriteRule ^tes.php$ tes.php [L]
+RewriteRule ^auth$ function/auth.php [L]
+
+RewriteRule ^submit/([^/]+)$ function/$1.php [L]
+
+# Function Page
+RewriteRule ^([^/]+)$ view/$1.php [L]
